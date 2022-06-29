@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <title>Looping Array Elements in Javascript - HTML</title>
+</header>
+
+<body>
+    <h1>Looping Array Elements</h1>
+    <p id="demo"></p>
+    <script>
+        const listNames = ["Vinh", "Nghia", "Viet"];
+        let text = "<ul>";
+        listNames.forEach(myFunction);
+        text += "</ul>";
+        document.getElementById("demo").innerHTML = text;
+
+        function myFunction(value) {
+            text += "<li>" + value + "</li>";
+        }
+    </script>
+</body>
+
+</html>

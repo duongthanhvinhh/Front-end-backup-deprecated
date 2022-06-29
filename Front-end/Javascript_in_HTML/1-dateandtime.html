@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <title>Show date and time in Javascript</title>
+    <style>
+        #myId {
+            color: green;
+        }
+    </style>
+</header>
+
+<body>
+    <h1>The line below will show date and time: </h1>
+    <button type="button" onclick="document.getElementById('myId').innerHTML=Date()">Show Date and Time</button>
+    <!--Change the content of the element Id myId-->
+    <button type="button" onclick="this.innerHTML=Date()">Show Date and Time</button>
+    <!--Change the content of its own element-->
+    <p id="myId"></p>
+</body>
+
+</html>

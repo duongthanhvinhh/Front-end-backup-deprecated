@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <title>Table section</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <style>
+        th,
+        td {
+            background-color: #96D4D4;
+            border-style: dotted;
+            /* Some border style: dotted, dashed, solid, double, groove, ridge, inset, outset, none, hidden*/
+        }
+        
+        th {
+            text-align: center;
+        }
+    </style>
+</header>
+
+<body>
+    <h1>I will create a table.</h1>
+    <p>The table show all members in my family</p>
+    <p>Set the background color of each cell, and give the border a white color(the same as the document background), you get the impression of an invisible border</p>
+    <table style="width:50%; text-align:left;">
+        <tr style="height: 100px;">
+            <th style="width:100px;">No.</th>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <th>Full Name</th>
+            <td>Dương Việt</td>
+            <td>Lê Thị Thu</td>
+            <td>Dương Thị Thu Viên</td>
+            <td>Dương Thị Bích Viên</td>
+            <td>Dương Thanh Vĩnh</td>
+        </tr>
+        <tr>
+            <th>Age</th>
+            <td>49</td>
+            <td>50</td>
+            <td>27</td>
+            <td>26</td>
+            <td>23</td>
+        </tr>
+    </table>
+    <pre>
+        Some notes here:
+            1. tr is row, use style for tr to modify height of row 
+            2. td is cell, use style for th or td to modify width of the collumn 
+            3. th is header, by default, the text in th elements are bold and centered, but you can change with CSS style
+    </pre>
+</body>
+
+</html>

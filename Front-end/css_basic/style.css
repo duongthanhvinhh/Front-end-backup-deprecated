@@ -1,0 +1,61 @@
+body {
+    background-color: white;
+}
+
+h1 {
+    color: rgb(17, 10, 10);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: xx-large;
+    text-align: center;
+    border: 2px solid tomato;
+    padding: 20px;
+    margin: 2px;
+}
+
+h2 {
+    color: red;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: xx-large;
+    text-align: center;
+    border: 2px solid tomato;
+    padding: 20px;
+    margin: 2px;
+}
+
+p {
+    color: rgb(112, 75, 26);
+}
+
+p1 {
+    border-bottom: green;
+}
+
+a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+
+/* margin: define space between them outside of border */
+
+
+/* padding: define space between border and text inside of the border */

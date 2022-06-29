@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <title>Table section</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-color: green;
+            border-collapse: collapse;
+            /* use border-collapse to avoid duplicate the border of the table */
+        }
+    </style>
+</header>
+
+<body>
+    <h1>I will create a table.</h1>
+    <p>The table show all members in my family</p>
+    <table style="width:50%; text-align:center;">
+        <tr>
+            <th>No.</th>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Full Name and Age</th>
+            <td>Dương Việt</td>
+            <td>Lê Thị Thu</td>
+            <td>Dương Thị Thu Viên</td>
+            <td>Dương Thị Bích Viên</td>
+            <td>Dương Thanh Vĩnh</td>
+        </tr>
+        <tr>
+            <td>49</td>
+            <td>50</td>
+            <td>27</td>
+            <td>26</td>
+            <td>23</td>
+        </tr>
+    </table>
+    <pre>
+        Some notes here:
+            1. tr is row 
+            2. td is cell 
+            3. th is header, by default, the text in th elements are bold and centered, but you can change with CSS style
+    </pre>
+</body>
+
+</html>

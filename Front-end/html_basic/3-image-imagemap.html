@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>image session</title>
+    <style>
+        img {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is image session</h1>
+    <img src="vinh0.jpg" alt="myphoto0" width="500px" height="600px">
+    <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="myphoto" style="width: 500px;height: 600px;">
+    <!-- The first image, not in style, so It will be overwriten by the style in the head. The second already in the style, so It will not -->
+    <img src="https://www.w3schools.com/html/programming.gif" alt="slausers" style="width: 100px;height: 100px;">
+    <!-- Image as a link-->
+    <a href="https://facebook.com">
+        <img src="https://www.w3schools.com/html/programming.gif" alt="FB" style="width: 100px;height: 100px;">
+    </a>
+    <!-- image in another server -->
+    <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com" style="width:104px;height:142px;">
+    <!-- Use floating to put the image in the right or the left of page -->
+    <h2>This is floating example</h2>
+    <div>
+        <p>Float the image</p>
+        <p><img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="Smiley face" style="float: left; width:42px; height:42px;"> Are you OK
+        </p>
+        <p><img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="Smiley face" style="float: right; width:42px; height:42px;"> Are you OK
+        </p>
+    </div>
+    <hr>
+    <!-- image map  -->
+    <pre>
+        rect - defines a rectangular region : hcn
+        circle - defines a circular region  : Tron
+        poly - defines a polygonal region   : Da giac
+        default - defines the entire region Toan bo
+    </pre>
+
+    <p>
+        <img src="/images/map.jpg" alt="IMAGE" usemap="#workmap" width="400" height="379">
+        <map name="workmap">
+            <area shape="rect" coords="34,44,270,350" href="https://facebook.com" alt="fblink">   <!-- when click inside this area, you will be directed to FB,  the coordinates 34,44 is located 34 pixels from the left margin and 44 pixels from the top, The coordinates 270,350 is located 270 pixels from the left margin and 350 pixels from the top-->
+            <area shape="circle" coords="337,300,44" href="https://facebook.com" alt="Cup of coffee"> <!--  the coordinates of the center of the circle:337,300,and 44 is the radius of the circle -->
+            <area shape="poly" coords="140,121,181,116,204,160,204,222,191,270,140,329,85,355,58,352,37,322,40,259,103,161,128,147" href="https://facebook.com" alt="Cup of coffee"> <!--  write x-axis and y-axis of each point respectively as left -->
+        </map>
+    </p>
+
+
+</body>
+
+</html>

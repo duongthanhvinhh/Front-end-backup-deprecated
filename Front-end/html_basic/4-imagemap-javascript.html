@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>image session</title>
+    <style>
+        img {
+            width: 100%;
+        }
+    </style>
+    <script>
+        function alertFunction() {
+            alert("You clicked the computer, you will be directed to FB link")
+        }
+    </script>
+</head>
+
+<body style="background-image: url('https://www.w3schools.com/images/w3schools_green.jpg');background-repeat:no-repeat">
+    <h1>This is image session</h1>
+    <p>
+        <img src="/images/map.jpg" alt="IMAGE" usemap="#workmap" width="400" height="379">
+        <map name="workmap">
+            <area shape="rect" coords="34,44,270,350" href="https://facebook.com" alt="fblink" onclick="alertFunction()">   <!-- when click inside this area, you will be directed to FB,  the coordinates 34,44 is located 34 pixels from the left margin and 44 pixels from the top, The coordinates 270,350 is located 270 pixels from the left margin and 350 pixels from the top-->
+            <area shape="circle" coords="337,300,44" href="https://facebook.com" alt="Cup of coffee"> <!--  the coordinates of the center of the circle:337,300,and 44 is the radius of the circle -->
+            <area shape="poly" coords="140,121,181,116,204,160,204,222,191,270,140,329,85,355,58,352,37,322,40,259,103,161,128,147" href="https://facebook.com" alt="Cup of coffee"> <!--  write x-axis and y-axis of each point respectively as left -->
+        </map>
+    </p>
+    <hr>
+    <p style="background-image: url('https://www.w3schools.com/images/w3schools_green.jpg'); background-repeat: no-repeat; background-size:cover;background-attachment:fixed;">
+        <!--Use background image , to have background for the text. Use background repeat norepeat to prevent images duplicate by itself. Use background-size:cover or 100% 100%, to have the image cover full element or 100% 100%, use background-attachment:fixed to keep the original ratio of x and y axis of the image-->
+        You can specify background images<br> for any visible HTML element<br> In this example, the background image<br> is specified<br>
+    </p>
+</body>
+
+</html>

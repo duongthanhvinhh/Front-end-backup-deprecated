@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>try catch example</title>
+</head>
+
+<body>
+    <header>try catch exercises</header>
+    <input id="demo" type="text">
+    <button type="button" onclick="myFunction()">Check</button>
+    <p id="p01"></p>
+    <script>
+        function myFunction() {
+            const message = document.getElementById("p01");
+            message.innerHTML = "";
+            let x = document.getElementById("demo").value;
+            try {
+                if (x == "") throw "please input a number";
+                if (isNaN(x)) throw "Not a number";
+                x = Number(x);
+                if (x > 10) throw "is too high";
+                if (x < 5) throw "is too low";
+            } catch (err) {
+                message.innerHTML = err;
+            } finally {
+                document.getElementById("demo").value = ""
+            }
+        }
+    </script>
+</body>
+
+</html>

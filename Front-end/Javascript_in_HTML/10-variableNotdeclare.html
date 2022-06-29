@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <title>Variable not declared</title>
+</header>
+
+<body>
+    <h1></h1>
+    <p id="vinh"></p>
+    <script>
+        function myFunction() {
+            x = 4;
+        }
+    </script>
+    <script>
+        myFunction();
+        document.getElementById("vinh").innerHTML = x * x;
+    </script>
+
+</body>
+
+</html>

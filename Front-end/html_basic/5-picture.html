@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>this is header</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <picture>
+        <source media="(min-width: 650px)" srcset="https://th.bing.com/th/id/R.44d59f53d13571e6e5f60fa9148af21f?rik=Mfg1wUIGnGRTZg&pid=ImgRaw&r=0">
+        <!--if width of screen >= 650, the above image will be displayed-->
+        <source media="(min-width: 465px)" srcset="https://th.bing.com/th/id/OIP.1RKPnAxs7IC7giS2tOMavwHaE7?pid=ImgDet&rs=1">
+        <!--if width of screen <650 and >=465, the above image will be displayed-->
+        <img src="https://th.bing.com/th/id/OIP.Gry9vFqak_5J4RW7GdV2pgHaIa?pid=ImgDet&rs=1" alt="Ronaldo" style="width:auto">
+        <!--if width of screen <650, the above image will be displayed-->
+    </picture>
+
+    <pre>
+        If you do not specify the min-width, the browser will use the first format it recognizes, an ignore any of the following elements
+    </pre>
+</body>
+
+</html>
